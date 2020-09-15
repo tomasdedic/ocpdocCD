@@ -1,0 +1,13 @@
+apiVersion: ops.csas.cz/v1alpha1
+kind: Application
+metadata:
+  name: helloworld
+spec:
+  source:
+    repoURL: https://github.com/cs-poc/hello-world-hello-world.git
+    targetRevision: master
+    path: .
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

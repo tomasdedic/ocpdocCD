@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: www
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: www
+    spec:
+      containers:
+        - name: www
+          command:
+            - httpd
+          args:
+            - -p
+            - '8000'
+            - -h
+            - /www
+            - -f
+          image: artifactory.csas.elostech.cz:443/docker/crccheck/hello-world:latest
+          imagePullPolicy: IfNotPresent

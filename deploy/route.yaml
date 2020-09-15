@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: hugodoc
+spec:
+  path: /
+  to:
+    kind: Service
+    name: hugodoc
+  port:
+    targetPort: http
