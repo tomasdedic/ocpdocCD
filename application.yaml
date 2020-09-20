@@ -1,12 +1,12 @@
 apiVersion: ops.csas.cz/v1alpha1
 kind: Application
 metadata:
-  name: helloworld
+  name: madoc
 spec:
   source:
-    repoURL: https://github.com/cs-poc/hello-world-hello-world.git
+    repoURL: https://github.com/tomasdedic/ocpdocCD.git 
     targetRevision: master
-    path: .
+    path: ./deploy
   syncPolicy:
     automated:
       prune: true
