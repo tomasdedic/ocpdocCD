@@ -13,6 +13,6 @@ spec:
         app.kubernetes.io/name: pages
     spec:
       containers:
-        image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-95674463
+        image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-a2aea77c
       imagePullSecrets:
         - name: gcr-pull
