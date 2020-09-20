@@ -13,11 +13,6 @@ spec:
         app.kubernetes.io/name: pages
     spec:
       containers:
-        - name: pages
-          image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-a2aea77c
-          imagePullPolicy: IfNotPresent
-          ports:
-            - name: http
-              containerPort: 80
+        image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-d650b007
       imagePullSecrets:
         - name: gcr-pull
