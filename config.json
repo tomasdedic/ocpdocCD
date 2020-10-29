@@ -1,0 +1,22 @@
+{
+	"auths": {
+		"ghcr.io": {
+			"auth": "ZGlkaWU6YThjZDRkMjlhNzk5MjIyZDA3OGEyY2NiYzE3ZDU4NGM3YmNjYTgxNw=="
+		},
+		"https://asia.gcr.io": {
+			"auth": "Z2Nsb3VkZG9ja2VydG9rZW46eWEyOS5HbHljQnFFYXRsRTduSWhBWEVfaUlaWkwyMWZhNGhVQlV5VzI5dEw1ZEZGOFNSWWhRTTRJMlMxcUZfWS1meUMtTmFUM1RjckkxSzBnV1VvdG9PT2J6OTBSSEJsbmstVGlTT25zT18zY2xFY005QzF2eXAycGlvSXFmMDVERlE=",
+			"email": "not@val.id"
+		},
+		"https://eu.gcr.io": {
+			"auth": "Z2Nsb3VkZG9ja2VydG9rZW46eWEyOS5HbHljQnFFYXRsRTduSWhBWEVfaUlaWkwyMWZhNGhVQlV5VzI5dEw1ZEZGOFNSWWhRTTRJMlMxcUZfWS1meUMtTmFUM1RjckkxSzBnV1VvdG9PT2J6OTBSSEJsbmstVGlTT25zT18zY2xFY005QzF2eXAycGlvSXFmMDVERlE=",
+			"email": "not@val.id"
+		},
+		"https://gcr.io": {
+			"auth": "Z2Nsb3VkZG9ja2VydG9rZW46eWEyOS5HbHljQnFFYXRsRTduSWhBWEVfaUlaWkwyMWZhNGhVQlV5VzI5dEw1ZEZGOFNSWWhRTTRJMlMxcUZfWS1meUMtTmFUM1RjckkxSzBnV1VvdG9PT2J6OTBSSEJsbmstVGlTT25zT18zY2xFY005QzF2eXAycGlvSXFmMDVERlE=",
+			"email": "not@val.id"
+		}
+	},
+	"HttpHeaders": {
+		"User-Agent": "Docker-Client/19.03.12 (linux)"
+	}
+}
