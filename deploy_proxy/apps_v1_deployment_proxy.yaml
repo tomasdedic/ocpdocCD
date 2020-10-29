@@ -18,29 +18,29 @@ spec:
         project: hugodoc
     spec:
       containers:
-      - args:
-        - --https-address=:8443
-        - --provider=openshift
-        - --openshift-service-account=proxy
-        - --upstream=http://localhost:8080
-        - --tls-cert=/etc/tls/private/tls.crt
-        - --tls-key=/etc/tls/private/tls.key
-        - --cookie-secret=SECRET
-        image: openshift/oauth-proxy:latest
-        imagePullPolicy: IfNotPresent
-        name: oauth-proxy
-        ports:
-        - containerPort: 8443
-          name: public
-        volumeMounts:
-        - mountPath: /etc/tls/private
-          name: proxy-tls
-      - image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-95314531
-        name: app
+        - args:
+            - --https-address=:8443
+            - --provider=openshift
+            - --openshift-service-account=proxy
+            - --upstream=http://localhost:8080
+            - --tls-cert=/etc/tls/private/tls.crt
+            - --tls-key=/etc/tls/private/tls.key
+            - --cookie-secret=SECRET
+          image: openshift/oauth-proxy:latest
+          imagePullPolicy: IfNotPresent
+          name: oauth-proxy
+          ports:
+            - containerPort: 8443
+              name: public
+          volumeMounts:
+            - mountPath: /etc/tls/private
+              name: proxy-tls
+        - image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-b138f033
+          name: app
       imagePullSecrets:
-      - name: gcr-pull-m6m4bg66g5
+        - name: gcr-pull-m6m4bg66g5
       serviceAccountName: proxy
       volumes:
-      - name: proxy-tls
-        secret:
-          secretName: proxy-tls
+        - name: proxy-tls
+          secret:
+            secretName: proxy-tls
