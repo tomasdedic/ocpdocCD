@@ -6,7 +6,7 @@ metadata:
   name: proxy
   namespace: blaster
 spec:
-  host: hugodoc
+  host: hdoc.apps.oshi43.csas.elostech.cz
   tls:
     termination: Reencrypt
   to:
