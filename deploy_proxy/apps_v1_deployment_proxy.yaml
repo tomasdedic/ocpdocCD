@@ -38,7 +38,7 @@ spec:
         - image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-0106dc0b
           name: app
       imagePullSecrets:
-        - name: gcr-pull-m6m4bg66g5
+        - name: gcr-pull
       serviceAccountName: proxy
       volumes:
         - name: proxy-tls
