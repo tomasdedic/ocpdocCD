@@ -35,7 +35,7 @@ spec:
           volumeMounts:
             - mountPath: /etc/tls/private
               name: proxy-tls
-        - image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-466cdce6
+        - image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-e24499a2
           name: app
       imagePullSecrets:
         - name: gcr-pull
