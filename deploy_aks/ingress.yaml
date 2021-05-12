@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: gg-ingress
+  name: www-ingress
   namespace: blaster
   labels:
-    project: gg
+    project: www
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: nginx-external
@@ -20,7 +20,7 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: ggservice
+          serviceName: hugodoc
           servicePort: http
         path: /
   tls:
