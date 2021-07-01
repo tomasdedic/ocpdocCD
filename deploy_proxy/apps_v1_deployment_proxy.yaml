@@ -26,7 +26,7 @@ spec:
             - --tls-cert=/etc/tls/private/tls.crt
             - --tls-key=/etc/tls/private/tls.key
             - --cookie-secret=SECRET
-          image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-3a162b4a
+          image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-5175d584
           imagePullPolicy: IfNotPresent
           name: oauth-proxy
           ports:
