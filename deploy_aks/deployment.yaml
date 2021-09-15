@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: www
-          image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-9841c9a9
+          image: ghcr.io/tomasdedic/ocpdoc/hugogen:sha-71253662
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
